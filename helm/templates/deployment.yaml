@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: golang-test-app
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: golang-test-app
+  template:
+    metadata:
+      labels:
+        app: golang-test-app
+    spec:
+      containers:
+        - name: multi-golang-test-app
+          image: "rjones21/golangtestapp:latest"
+          ports:
+            - name: http
+              containerPort: 8000
+              protocol: TCP

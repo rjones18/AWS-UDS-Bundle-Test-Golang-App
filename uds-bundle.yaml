@@ -1,0 +1,16 @@
+kind: UDSBundle
+metadata:
+  name: golang-app-bundle
+  description: Bundle with Zarf init and test golang app.
+  architecture: arm64
+  version: 0.0.1
+
+packages:
+
+  - name: init
+    repository: oci://ghcr.io/defenseunicorns/packages/init
+    ref: v0.32.1
+
+  - name: golang-helm-charts
+    path: ./
+    ref: 0.0.1
