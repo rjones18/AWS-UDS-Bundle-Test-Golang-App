@@ -1,1 +1,1 @@
-# UDS-Bundle-Test-Golang-App
+# AWS-UDS-Bundle-Test-Golang-App
