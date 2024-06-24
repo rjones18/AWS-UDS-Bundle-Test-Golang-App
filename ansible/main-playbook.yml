@@ -1,0 +1,12 @@
+---
+- name: Configure master node
+  hosts: master_server
+  become: yes
+  tasks:
+    
+    - name: Update apt-get(yum in centos) repository
+      apt:
+        update_cache: yes
+
+    - name: Execute the script
+      ansible.builtin.script: ./scripts/script.sh

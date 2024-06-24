@@ -1,0 +1,7 @@
+[master_server]
+54.165.207.76
+
+
+[master_server:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=~/Downloads/Mackey.pem
