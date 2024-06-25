@@ -23,12 +23,4 @@ sudo apt install -y docker-ce
 
 # Add current user to the docker group
 sudo usermod -aG docker ${USER}
-
-# Install UDS, Zarf K3d, and Kubectl using Homebrew
-brew install defenseunicorns/tap/uds
-brew tap defenseunicorns/tap && brew install zarf
-brew install k3d
-brew install kubectl
-
-# Deploy UDS Core
-uds deploy k3d-core-demo:0.22.2 --confirm
+exit
