@@ -6,7 +6,7 @@ variables:
    AWS_DEFAULT_REGION: "us-east-1"
 
 security scans:
-  stage: unit test and security scans
+  stage: security scans
   image: python:3.9
   before_script:
     - echo "Installing Update..."
