@@ -11,6 +11,6 @@ resource "aws_instance" "master_server" {
   }
 
   tags = {
-    Name = "master_node_server"
+    Name = "reggie_uds_core_server"
   }
 }

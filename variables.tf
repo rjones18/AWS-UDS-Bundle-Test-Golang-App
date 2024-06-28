@@ -27,7 +27,7 @@ variable "public_subnet_name" {
 
 
 variable "my_keypair" {
-  default = "Mackey2023"
+  default = "reggie-key"
 }
 
 variable "number_of_instances" {
